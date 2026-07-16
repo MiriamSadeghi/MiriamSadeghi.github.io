@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maryam Sadeghabadi — Researcher in Reliable Medical Image Analysis, Uncertainty Quantification, Spurious Correlation, and LLM Reasoning." />
+  <title>Maryam Sadeghabadi — Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Progress bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__brand" aria-label="Maryam Sadeghabadi home">
+        <span class="nav__brand-mark">MS</span>
+        <span class="nav__brand-name">Maryam Sadeghabadi</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#honors">Honors</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="btn btn--sm btn--primary nav__cta">Contact</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__blob hero__blob--1"></div>
+        <div class="hero__blob hero__blob--2"></div>
+        <div class="hero__grid"></div>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__media reveal">
+          <div class="hero__photo-frame">
+            <img src="assets/profile.jpg" alt="Maryam Sadeghabadi" class="hero__photo" onerror="this.style.display='none';this.parentElement.classList.add('hero__photo-frame--empty')" />
+            <div class="hero__photo-placeholder" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/>
+              </svg>
+              <span>Maryam Sadeghabadi</span>
+            </div>
+            <div class="hero__photo-ring" aria-hidden="true"></div>
+          </div>
+        </div>
+        <div class="hero__content">
+          <p class="hero__eyebrow reveal">Researcher · Machine Learning</p>
+          <h1 class="hero__title reveal">
+            Maryam<br /><span class="hero__title-name">Sadeghabadi</span>
+          </h1>
+          <p class="hero__lede reveal">
+            Building <strong>reliable medical AI</strong> through uncertainty quantification,
+            spurious-correlation auditing, and large language model reasoning.
+          </p>
+          <div class="hero__actions reveal">
+            <a href="#research" class="btn btn--primary">Explore my research</a>
+            <a href="#contact" class="btn btn--ghost">Get in touch</a>
+          </div>
+          <div class="hero__chips reveal">
+            <span class="chip">Medical Image Analysis</span>
+            <span class="chip">Uncertainty Quantification</span>
+            <span class="chip">Spurious Correlation</span>
+            <span class="chip">LLM Reasoning</span>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll to content">
+        <span class="hero__scroll-mouse"><span class="hero__scroll-wheel"></span></span>
+        <span class="hero__scroll-text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">01</span>
+          <h2 class="section__title">About</h2>
+        </div>
+        <div class="about">
+          <div class="about__text reveal">
+            <p class="about__lead">
+              I'm a Master's student in Computer Engineering &amp; Bioinformatics at
+              <strong>Sharif University of Technology</strong>, working in the
+              Robust and Interpretable Machine Learning (RIML) lab.
+            </p>
+            <p>
+              My research focuses on making medical AI trustworthy. I investigate
+              uncertainty quantification and deep generative modeling for radiological
+              image analysis, design patient-specific prediction pipelines with rigorous
+              validation, and develop robust frameworks for clinically relevant decision
+              support.
+            </p>
+            <p>
+              I'm also exploring how large language models can accelerate scientific
+              discovery — from hypothesis generation to automated scientific reasoning —
+              and how to audit image classifiers for spurious correlations and bias.
+            </p>
+          </div>
+          <aside class="about__card reveal">
+            <div class="about__card-row">
+              <span class="about__card-label">Currently</span>
+              <span class="about__card-value">M.S. Bioinformatics, Sharif UT</span>
+            </div>
+            <div class="about__card-row">
+              <span class="about__card-label">Lab</span>
+              <span class="about__card-value">RIML Lab</span>
+            </div>
+            <div class="about__card-row">
+              <span class="about__card-label">Advisor</span>
+              <span class="about__card-value">Dr. M. H. Rohban</span>
+            </div>
+            <div class="about__card-row">
+              <span class="about__card-label">Location</span>
+              <span class="about__card-value">Tehran, Iran</span>
+            </div>
+            <div class="about__card-row">
+              <span class="about__card-label">Focus</span>
+              <span class="about__card-value">Reliable Medical AI</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research interests -->
+    <section class="section section--alt" id="research">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">02</span>
+          <h2 class="section__title">Research Interests</h2>
+        </div>
+        <div class="cards">
+          <article class="card card--interest reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg>
+            </div>
+            <h3>Reliable Medical Image Analysis</h3>
+            <p>Designing patient-specific prediction pipelines with rigorous validation methodologies on medical imaging datasets.</p>
+          </article>
+          <article class="card card--interest reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+            </div>
+            <h3>Uncertainty Quantification</h3>
+            <p>Investigating uncertainty quantification and deep generative modeling techniques for radiological image analysis and prediction.</p>
+          </article>
+          <article class="card card--interest reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h16"/><circle cx="18" cy="12" r="2"/></svg>
+            </div>
+            <h3>Spurious Correlation</h3>
+            <p>Uncovering latent sources of model bias and assessing their impact on predictive performance in image classifiers.</p>
+          </article>
+          <article class="card card--interest reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M5 12H2M22 12h-3M6 6 4 4M20 20l-2-2M6 18l-2 2M20 4l-2 2"/><circle cx="12" cy="12" r="4"/></svg>
+            </div>
+            <h3>LLM Reasoning</h3>
+            <p>Applying large language models to scientific discovery workflows — hypothesis generation, knowledge extraction, and automated reasoning.</p>
+          </article>
+        </div>
+
+        <!-- Research experience -->
+        <div class="research-exp reveal">
+          <h3 class="research-exp__title">Research Experience</h3>
+          <div class="research-exp__item">
+            <div class="research-exp__head">
+              <span class="research-exp__role">Graduate Research Assistant</span>
+              <span class="research-exp__dot"></span>
+              <span class="research-exp__org">Sharif University of Technology · RIML Lab</span>
+            </div>
+            <p class="research-exp__desc">
+              Investigating uncertainty quantification and deep generative modeling techniques
+              for radiological image analysis and prediction. Designing and evaluating patient-specific
+              prediction pipelines with rigorous validation methodologies on medical imaging datasets.
+              Developing robust AI frameworks for clinically relevant decision support applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">03</span>
+          <h2 class="section__title">Education</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <div class="timeline__marker"><span class="timeline__dot"></span></div>
+            <div class="timeline__content">
+              <div class="timeline__top">
+                <h3 class="timeline__degree">M.S. in Computer Engineering, Bioinformatics</h3>
+                <span class="timeline__date">Sep 2024 — Ongoing</span>
+              </div>
+              <p class="timeline__school">Sharif University of Technology · Tehran, Iran</p>
+              <ul class="timeline__list">
+                <li>Supervisor: Dr. M. H. Rohban</li>
+                <li>GPA: 17.5 / 20</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline__item reveal">
+            <div class="timeline__marker"><span class="timeline__dot"></span></div>
+            <div class="timeline__content">
+              <div class="timeline__top">
+                <h3 class="timeline__degree">B.S. in Computer Science</h3>
+                <span class="timeline__date">2020 — 2024</span>
+              </div>
+              <p class="timeline__school">Amirkabir University of Technology (Tehran Polytechnic) · Tehran, Iran</p>
+              <ul class="timeline__list">
+                <li>GPA: 18.84 / 20</li>
+                <li>Ranked in the top 10 among 90 students</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">04</span>
+          <h2 class="section__title">Projects</h2>
+        </div>
+        <div class="projects">
+          <article class="project reveal">
+            <div class="project__head">
+              <h3 class="project__name">LLM-Based Scientific Reasoning &amp; Knowledge Generation</h3>
+              <span class="project__tag">Research Intern · RIML Lab</span>
+            </div>
+            <p class="project__date">Fall 2025</p>
+            <p class="project__desc">
+              Explored the application of large language models to scientific discovery workflows
+              through literature review and experimental investigation. Evaluated LLM-based approaches
+              for hypothesis generation, knowledge extraction, and automated scientific reasoning.
+            </p>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__head">
+              <h3 class="project__name">Automated Spurious Feature Discovery in Image Classifiers</h3>
+              <span class="project__tag">Deep Generative Models Project</span>
+            </div>
+            <p class="project__date">Fall 2025</p>
+            <p class="project__desc">
+              Conducted research on spurious correlation discovery and bias auditing in image
+              classification models. Designed and evaluated data-driven methodologies for uncovering
+              latent sources of model bias and assessing their impact on predictive performance.
+            </p>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__head">
+              <h3 class="project__name">Deep Generative Models — Coursework Portfolio</h3>
+              <span class="project__tag">Coursework</span>
+            </div>
+            <p class="project__date">Fall 2025</p>
+            <ul class="project__list">
+              <li>Implemented and analyzed autoregressive models for audio and image generation; derived theoretical properties of Gaussian AR models and Real NADE.</li>
+              <li>Built VAE variants from scratch for probabilistic graph forecasting and conditional image generation; studied posterior collapse and Cauchy–Schwarz divergence.</li>
+              <li>Constructed normalizing flows and continuous normalizing flows; applied Glow to image inpainting.</li>
+              <li>Implemented score-based / energy-based models with score-matching variants (ESM, ISM, DSM) and MCMC sampling.</li>
+            </ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__head">
+              <h3 class="project__name">Document Retrieval with BIM, BM25 &amp; N-gram + BERT</h3>
+              <span class="project__tag">Information Retrieval Course</span>
+            </div>
+            <p class="project__date">Fall 2023</p>
+            <p class="project__desc">
+              Developed N-gram models for document retrieval using Mercer-Jelinek smoothing and
+              implemented semantic vector representations with BERT and word2vec for improved query
+              and document analysis.
+            </p>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__head">
+              <h3 class="project__name">MultiModal IR — Survey Presentation</h3>
+              <span class="project__tag">Survey Presentation</span>
+            </div>
+            <p class="project__date">Fall 2023</p>
+            <p class="project__desc">
+              Presented a comprehensive survey on recent advancements in Multimodal Information
+              Retrieval, focusing on image retrieval techniques and highlighting key developments
+              and methodologies across recent literature.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honors & Awards -->
+    <section class="section" id="honors">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">05</span>
+          <h2 class="section__title">Honors &amp; Awards</h2>
+        </div>
+        <div class="honors reveal">
+          <div class="honor">
+            <div class="honor__icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4zM5 4h2v3a3 3 0 0 1-2-3zM17 4h2a3 3 0 0 1-2 3V4z"/></svg>
+            </div>
+            <div class="honor__body">
+              <h3 class="honor__title">Ranked 5th among 88 students</h3>
+              <p class="honor__sub">University of Amirkabir · GPA 19.1 / 20</p>
+            </div>
+            <span class="honor__date">Spring 2022</span>
+          </div>
+          <div class="honor">
+            <div class="honor__icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 7l10-3 10 3-10 3-10-3zM6 10v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+            </div>
+            <div class="honor__body">
+              <h3 class="honor__title">Eligible to pursue a second major</h3>
+              <p class="honor__sub">For exceptional academic performance</p>
+            </div>
+            <span class="honor__date">Spring 2021</span>
+          </div>
+        </div>
+
+        <!-- Relevant coursework -->
+        <div class="coursework reveal">
+          <h3 class="coursework__title">Relevant Coursework</h3>
+          <p class="coursework__note"><sup>*</sup> Indicates graduate-level courses</p>
+          <div class="coursework__grid">
+            <div class="course"><span class="course__name">Intelligent Analysis of Biomedical Images<sup>*</sup></span><span class="course__grade">20/20</span></div>
+            <div class="course"><span class="course__name">Drug Discovery<sup>*</sup></span><span class="course__grade">19/20</span></div>
+            <div class="course"><span class="course__name">Computational Data Mining<sup>*</sup></span><span class="course__grade">19/20</span></div>
+            <div class="course"><span class="course__name">Deep Generative Models<sup>*</sup></span><span class="course__grade">16.4/20</span></div>
+            <div class="course"><span class="course__name">Combinatorial Optimization</span><span class="course__grade">19.8/20</span></div>
+            <div class="course"><span class="course__name">Artificial Intelligence</span><span class="course__grade">20/20</span></div>
+            <div class="course"><span class="course__name">Data Mining</span><span class="course__grade">20/20</span></div>
+            <div class="course"><span class="course__name">Linear Optimization</span><span class="course__grade">20/20</span></div>
+          </div>
+        </div>
+
+        <!-- Teaching -->
+        <div class="teaching reveal">
+          <h3 class="teaching__title">Teaching Experience</h3>
+          <div class="teaching__list">
+            <div class="teach"><span class="teach__term">Spring 2024</span><span class="teach__course">Data Mining</span><span class="teach__prof">Dr. Shakeri</span></div>
+            <div class="teach"><span class="teach__term">Spring 2024</span><span class="teach__course">Neural Networks &amp; Deep Learning</span><span class="teach__prof">Dr. Shakeri</span></div>
+            <div class="teach"><span class="teach__term">Spring 2024</span><span class="teach__course">Machine Learning</span><span class="teach__prof">Dr. Motahari</span></div>
+            <div class="teach"><span class="teach__term">Fall 2023</span><span class="teach__course">Artificial Intelligence</span><span class="teach__prof">Dr. Ghatee</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Volunteer -->
+    <section class="section section--alt" id="volunteer">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">06</span>
+          <h2 class="section__title">Volunteer Experience</h2>
+        </div>
+        <div class="volunteer reveal">
+          <div class="volunteer__role">
+            <h3>Scientific Team Leader</h3>
+            <p>Computer Webinar Series (CWS)</p>
+            <span class="volunteer__date">Mar 2021 — Aug 2022</span>
+          </div>
+          <p class="volunteer__desc">
+            Led content planning, speaker coordination, and ensured accurate scientific
+            information delivery for the Computer Webinar Series.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">07</span>
+          <h2 class="section__title">Skills</h2>
+        </div>
+        <div class="skills reveal">
+          <div class="skill-group">
+            <h3 class="skill-group__title">Programming Languages</h3>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Libraries</h3>
+            <div class="skill-tags">
+              <span class="tag">NumPy</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Scikit-Learn</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">Pyomo</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Miscellaneous</h3>
+            <div class="skill-tags">
+              <span class="tag">LaTeX</span>
+              <span class="tag">Git</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Power BI</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Languages</h3>
+            <div class="skill-tags">
+              <span class="tag">Persian</span>
+              <span class="tag">English</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--cta" id="contact">
+      <div class="container">
+        <div class="contact reveal">
+          <h2 class="contact__title">Let's talk research.</h2>
+          <p class="contact__sub">
+            Interested in collaboration, research opportunities, or discussing reliable medical AI?
+            I'd love to hear from you.
+          </p>
+          <div class="contact__links">
+            <a class="contact__icon" href="https://www.linkedin.com/in/maryam-sadeghabadi-17bb78220/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0z"/></svg>
+              <span class="contact__icon-label">LinkedIn</span>
+            </a>
+            <a class="contact__icon" href="https://github.com/MiriamSadeghi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              <span class="contact__icon-label">GitHub</span>
+            </a>
+            <button class="contact__icon" type="button" data-email data-u="miryamsadeghi82" data-d="gmail.com" aria-label="Copy email address">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <span class="contact__icon-label" data-email-label>Gmail</span>
+            </button>
+            <button class="contact__icon" type="button" data-email data-u="maryam.sadeghabadi82" data-d="sharif.edu" aria-label="Copy email address">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <span class="contact__icon-label" data-email-label>University</span>
+            </button>
+          </div>
+          <p class="contact__hint">Click an email icon to copy the address to your clipboard.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© <span id="year"></span> Maryam Sadeghabadi. All rights reserved.</p>
+      <p class="footer__meta">Built with care · Researcher in Reliable Medical AI</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+    <span id="toastMsg">Copied!</span>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
